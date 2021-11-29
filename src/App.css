@@ -2,8 +2,8 @@
   width: 97%;
   margin: auto;
 }
-@media screen and (min-width: 260px) and (max-width: 720px) {
+@media screen and (min-width: 260px) and (max-width: 890px) {
   .App {
-    width: 100%;
+    width: 97%;
   }
 }

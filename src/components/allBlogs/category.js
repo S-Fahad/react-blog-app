@@ -29,7 +29,7 @@ function Category(props) {
                     ></img>
                   </div>
                   <div>
-                    <h1>{values.title}</h1>
+                    <h2>{values.title}</h2>
                     <p>{values.desc}</p>
                     <b>{values.category} /</b>
                     <i>{values.date}</i>

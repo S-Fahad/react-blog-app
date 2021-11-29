@@ -14,10 +14,12 @@
 .category-content {
   display: flex;
   border-bottom: 2px solid grey;
+  margin-right: 20px;
 }
 .category-content:last-child {
   border-bottom: none;
 }
+
 .category-img {
   height: 200px;
   width: 150px;
@@ -61,4 +63,9 @@
   bottom: 15px;
   font-size: 60px;
   color: rgb(196, 191, 191);
+}
+@media screen and (min-width: 260px) and (max-width: 890px) {
+  .category-container {
+    grid-template-columns: 1fr;
+  }
 }

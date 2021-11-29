@@ -223,7 +223,7 @@ const allCategories = [
   {
     id: 21,
     imgUrl:
-      "https://lh3.googleusercontent.com/proxy/FIq3aZAGfZPSXgHXo5UuG7tLaBDrdbgJOecsT8-_eQUYIZIaL4GD5tInYnnrg5ZVQKD7HpxEph0coGeJE0BUnD5352bwpId9NklLExZCeNNwz-1XHQR3Mbf9HVBrTj0mgbajwn2a_oVHu84YpZJ1dF5qW7NdnTo8Dnh72a8",
+      "https://images.unsplash.com/photo-1634926638859-841e6d65cf68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     desc: "Gujrat is vastly overrated and it's a mystery to us why the region isn't more well known as a tourist destination. it has a plethora of temples and palaces",
     title: "Joshua tree overnight adventure",
     date: "August 21 2017",
@@ -232,7 +232,7 @@ const allCategories = [
   {
     id: 22,
     imgUrl:
-      "https://lh3.googleusercontent.com/proxy/FIq3aZAGfZPSXgHXo5UuG7tLaBDrdbgJOecsT8-_eQUYIZIaL4GD5tInYnnrg5ZVQKD7HpxEph0coGeJE0BUnD5352bwpId9NklLExZCeNNwz-1XHQR3Mbf9HVBrTj0mgbajwn2a_oVHu84YpZJ1dF5qW7NdnTo8Dnh72a8",
+      "https://images.unsplash.com/photo-1634926638859-841e6d65cf68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     desc: "Gujrat is vastly overrated and it's a mystery to us why the region isn't more well known as a tourist destination. it has a plethora of temples and palaces",
     title: "Joshua tree overnight adventure",
     date: "August 21 2017",
@@ -241,7 +241,7 @@ const allCategories = [
   {
     id: 23,
     imgUrl:
-      "https://lh3.googleusercontent.com/proxy/FIq3aZAGfZPSXgHXo5UuG7tLaBDrdbgJOecsT8-_eQUYIZIaL4GD5tInYnnrg5ZVQKD7HpxEph0coGeJE0BUnD5352bwpId9NklLExZCeNNwz-1XHQR3Mbf9HVBrTj0mgbajwn2a_oVHu84YpZJ1dF5qW7NdnTo8Dnh72a8",
+      "https://images.unsplash.com/photo-1634926638859-841e6d65cf68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     desc: "Gujrat is vastly overrated and it's a mystery to us why the region isn't more well known as a tourist destination. it has a plethora of temples and palaces",
     title: "Joshua tree overnight adventure",
     date: "August 21 2017",

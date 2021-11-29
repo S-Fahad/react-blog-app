@@ -34,7 +34,7 @@
 .expandNav-content {
   display: none;
 }
-@media screen and (min-width: 260px) and (max-width: 720px) {
+@media screen and (min-width: 260px) and (max-width: 890px) {
   .navbar {
     border-bottom: none;
   }
@@ -55,10 +55,12 @@
     width: 100%;
     z-index: 3;
     background-color: white;
+    box-shadow: 0px 3px 3px rgb(226, 223, 223);
   }
   .expandNav-content a {
     text-decoration: none;
     color: black;
+    padding: 3px;
   }
   .nav {
     display: flex;

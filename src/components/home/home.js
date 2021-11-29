@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { allBlogs } from "../allBlogs/blogs";
+
 import "./home.css";
 
 export function Home() {
@@ -18,9 +19,9 @@ export function Home() {
         <h2>
           The latest <div className="underline"></div>
         </h2>
-        <div className="latest">
+        <div className="latest-div">
           {travelBlog.map((values) => (
-            <div className="latest-content">
+            <div className="latest-content" key={values.id}>
               <img src={values.imgUrl} alt="" />
               <h1>{values.title}</h1>
               <p>{values.desc}</p>
@@ -37,7 +38,7 @@ export function Home() {
           <div className="latest-article">
             <section>
               {travel.map((values) => (
-                <div className="latest-articles">
+                <div className="latest-articles" key={values.id}>
                   <img src={values.imgUrl} alt="" />
                   <div>
                     <h1>{values.title}</h1>
@@ -50,14 +51,14 @@ export function Home() {
             </section>
             <section>
               <div className="advertisement">Advertisement</div>
-              {topBlog.map((value) => (
-                <div className="topPost">
-                  <img src={value.imgUrl} alt="" />
+              {topBlog.map((values) => (
+                <div className="topPost" key={values.id}>
+                  <img src={values.imgUrl} alt="" />
                   <div>
-                    <h1>{value.title}</h1>
-                    <p>{value.desc}</p>
-                    <i>{value.category} </i>
-                    <i> {value.date}</i>
+                    <h1>{values.title}</h1>
+                    <p>{values.desc}</p>
+                    <i>{values.category} </i>
+                    <i> {values.date}</i>
                   </div>
                 </div>
               ))}
@@ -71,7 +72,7 @@ export function Home() {
           <div className="line"></div>
           <div className="latest-stories">
             {travelBlog.map((values) => (
-              <div>
+              <div key={values.id}>
                 <h1>{values.title}</h1>
                 <p>{values.desc}</p>
                 <i>{values.category}</i> /<i> {values.date}</i>
