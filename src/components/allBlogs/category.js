@@ -1,7 +1,6 @@
 import { useParams } from "react-router";
 import { useContext, useState, useEffect } from "react";
 import { allBlogs } from "./blogs";
-import { NavLink } from "react-router-dom";
 import "./category.css";
 
 function Category(props) {

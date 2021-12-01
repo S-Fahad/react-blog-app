@@ -1,16 +1,15 @@
 import React from "react";
 import { useParams } from "react-router";
-import "./article.css";
 import { allBlogs } from "../allBlogs/blogs";
 import { useContext } from "react";
-import authorPic from "../../images/Mask face.png";
+import "./article.css";
 import Footer from "../footer/footer";
 
 function Article() {
   let { id } = useParams();
   console.log(id);
   const blogs = useContext(allBlogs);
-  const filteredBlog = blogs.filter((values) => values.id == id);
+  const filteredBlog = blogs.filter((values) => values.id === +id);
   console.log(filteredBlog);
   return (
     <div>
