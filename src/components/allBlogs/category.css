@@ -19,11 +19,14 @@
 .category-content:last-child {
   border-bottom: none;
 }
-
+.category-content-div {
+  padding-top: 30px;
+}
 .category-img {
   height: 200px;
   width: 150px;
   margin: 15px;
+  border-radius: 5px;
 }
 .category-main {
   display: flex;
@@ -38,7 +41,7 @@
   justify-content: center;
   align-items: center;
   margin: 8px;
-  font-size: 30px;
+  font-size: 17px;
 }
 .topPost-img {
   height: 100px;
@@ -57,6 +60,7 @@
 .topPost-title {
   padding-top: 13px;
 }
+
 .number {
   position: absolute;
   right: 5px;
@@ -64,8 +68,45 @@
   font-size: 60px;
   color: rgb(196, 191, 191);
 }
+
+.updateCount {
+  border: none;
+  font-size: 20px;
+  color: rgb(245, 144, 144);
+  margin: 30px 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 254, 254);
+}
+
 @media screen and (min-width: 260px) and (max-width: 890px) {
   .category-container {
     grid-template-columns: 1fr;
+  }
+  .category-container div {
+    /* justify-content: center; */
+    width: 100%;
+  }
+  .category-content {
+    flex-direction: column;
+  }
+  .category-img {
+    min-width: 200px;
+    max-width: 480px;
+  }
+  .category-content-div {
+    margin-bottom: 15px;
+  }
+  .underline {
+    width: 50px !important;
+  }
+  .advertisement {
+    margin-top: 30px;
+  }
+  .topPost-content-div {
+    margin-bottom: 15px;
+  }
+  .number {
+    bottom: 25px;
   }
 }

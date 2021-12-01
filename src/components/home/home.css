@@ -1,25 +1,47 @@
 .home {
+  position: relative;
   display: flex;
+  /* gap: 30px; */
+  width: 90%;
+  /* position: relative; */
 }
-.home img {
-  height: 62vh;
-  min-width: 40vw;
-  max-width: 220vw;
-  margin: 10px;
+
+.pic1 {
+  position: relative;
+  height: 560px;
+  /* max-width: 1500px; */
 }
-.home-flex {
-  display: flex;
-  flex-direction: column;
+.pic1,
+img {
+  width: 90%;
+  min-width: 60%;
 }
-.home-flex img {
-  height: 30vh;
-  min-width: 40vw;
-  max-width: 100vw;
-  margin: 10px;
+.pic2,
+.pic3 img {
+  width: 100%;
+}
+.pic2 {
+  position: relative;
+  height: 275px;
+  margin-bottom: 10px;
+}
+.pic3 {
+  position: relative;
+  height: 275px;
+}
+.desc1,
+.desc2,
+.desc3 {
+  position: absolute;
+  z-index: 3;
+  bottom: 30px;
+  left: 20px;
+  color: white;
 }
 .latest-div {
   display: flex;
-  width: 100vw;
+  width: 90vw;
+  gap: 1rem;
   /* flex-wrap: wrap; */
   /* margin: auto; */
 }
@@ -80,8 +102,20 @@
 }
 
 @media screen and (min-width: 260px) and (max-width: 890px) {
+  .home {
+    flex-direction: column;
+  }
+  .pic1,
+  .pic2,
+  .pic3 img {
+    width: 100%;
+    height: 100%;
+  }
   .latest-div {
     flex-direction: column;
+  }
+  .latest-div img {
+    width: 400px;
   }
   .latest-article {
     grid-template-columns: 1fr;
