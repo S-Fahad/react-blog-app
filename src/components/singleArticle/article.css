@@ -1,7 +1,7 @@
 .articleHead {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 3px 2px rgb(218, 213, 213);
+  box-shadow: 0px 3px 0px rgb(218, 213, 213);
   padding: 20px 0px;
 }
 
@@ -43,11 +43,12 @@
   margin-bottom: 50px;
 }
 .articleBody p::first-letter {
-  font-size: 30px;
+  font-size: 35px;
 }
 .content-pic {
-  width: 30px;
-  height: 300px;
+  width: 50%;
+  max-height: 70vh;
+  min-height: 50vh;
   margin: 25px auto;
   display: block;
 }

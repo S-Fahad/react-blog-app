@@ -103,21 +103,6 @@ export function Home() {
               ))}
             </section>
           </div>
-          {/* <div>
-            <h1>
-              Latest Stories <div className="underline"></div>
-            </h1>
-          </div>
-          <div className="line"></div>
-          <div className="latest-stories">
-            {travelBlog.map((values) => (
-              <div key={values.id}>
-                <h1>{values.title}</h1>
-                <p>{values.desc}</p>
-                <i>{values.category}</i> /<i> {values.date}</i>
-              </div>
-            ))}
-          </div> */}
           <div>
             <h1>
               Latest Stories <div className="underline"></div>

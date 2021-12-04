@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { NavLink, useParams } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { allBlogs } from "./blogs";
 import "./category.css";
@@ -7,15 +7,18 @@ function Category(props) {
   const [count, setcount] = useState(2);
   const blogs = useContext(allBlogs);
   const { category } = useParams();
-  console.log(props.match.params);
+  // console.log(props.match.params);
+  
   const updateCount = () => {
     setcount((prev) => prev + 2);
   };
+
+
   useEffect(() => {
     setcount(2);
   }, [category]);
   const filteredBlog = blogs.filter((values) => values.category === category);
-  // console.log(filteredBlog);
+ 
   return (
     <>
       <div className="category-container">
@@ -26,8 +29,8 @@ function Category(props) {
           </h1>
           <div className="category-main">
             <div>
-              {filteredBlog.slice(0, count).map((values, id) => (
-                <div key={id} className="category-content">
+              {filteredBlog.slice(0, count).map((values, index) => (
+                <div key={index} className="category-content">
                   <div>
                     <img
                       src={values.imgUrl}
@@ -36,7 +39,9 @@ function Category(props) {
                     ></img>
                   </div>
                   <div className="category-content-div">
-                    <b>{values.title}</b>
+                    <NavLink to={"/article/" + values.id}>
+                      {values.title}
+                    </NavLink>
                     <p>{values.about}</p>
                     <i>{values.category} /</i>
                     <i>{values.date}</i>
@@ -83,19 +88,3 @@ function Category(props) {
 }
 export default Category;
 
-//
-
-//
-//
-/*
-
-const arr = [
-  {
-    category: "bollywood",
-    name: 1,
-    imgUrl:
-      "https://www.wallpaperflare.com/static/533/281/308/mountains-lake-photo-body-wallpaper-preview.jpg",
-  },
-  { category: "food", name: 2 },
-];
-*/
