@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { allBlogs } from "../allBlogs/blogs";
 import Footer from "../footer/footer";
 
@@ -81,7 +82,9 @@ export function Home() {
                 <div className="latest-articles" key={values.id}>
                   <img src={values.imgUrl} alt="" />
                   <div>
-                    <h1>{values.title}</h1>
+                    <NavLink to={`/article/${values.id}`}>
+                      <h1>{values.title}</h1>
+                    </NavLink>
 
                     <i>{values.category} </i>
                     <i> {values.date}</i>
@@ -95,7 +98,9 @@ export function Home() {
                 <div className="topPost" key={values.id}>
                   <img src={values.imgUrl} alt="" />
                   <div>
-                    <h1>{values.title}</h1>
+                    <NavLink to={`/article/${values.id}`}>
+                      <h1>{values.title}</h1>
+                    </NavLink>
                     <i>{values.category} </i>
                     <i> {values.date}</i>
                   </div>

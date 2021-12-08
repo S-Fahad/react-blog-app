@@ -100,7 +100,11 @@ img {
   height: 150px;
   margin: 8px;
 }
-
+.latest-articles a,
+.topPost a {
+  text-decoration: none;
+  color: black;
+}
 @media screen and (min-width: 260px) and (max-width: 890px) {
   .home {
     flex-direction: column;
