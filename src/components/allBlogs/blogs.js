@@ -265,6 +265,33 @@ const allCategories = [
     date: "August 21 2017",
     category: "Travel",
   },
+  {
+    id: 111,
+    imgUrl:
+      "https://cdn2.wanderlust.co.uk/media/1019/cropped-lia-and-jeremy-at-yosemite-national-park-chapel.jpg?anchor=center&mode=crop&width=1280&height=0&format=auto&quality=90&rnd=132285714670000000",
+    desc: "If you want to travel, but you’re not sure where to start, you just need to take the first step. Research places you’d like to go - if you need some inspiration, check out our instagram (@SmallerEarth) to see some of our favourite places in the world.",
+    title: "Wanderlust",
+    date: "10-June-2021",
+    category: "",
+  },
+  {
+    id: 112,
+    imgUrl:
+      "https://cdn2.wanderlust.co.uk/media/1024/cropped-shutterstock_145434481.jpg?anchor=center&mode=crop&width=1280&height=0&format=auto&quality=90&rnd=132285727150000000",
+    desc: "It’s amazing that a guy named “Waldo” has a quote about being unique and getting lost in the world. The beauty of travel is that there are no rules - you can blaze your own trail, and go wherever you want. You never know where you may find yourself - and who else you may inspire to follow in your tracks.",
+    title: "Travel for Wildlife",
+    date: "20-July-2021",
+    category: "",
+  },
+  {
+    id: 113,
+    imgUrl:
+      "https://ak.picdn.net/offset/photos/5f80600b6f52af4409e4b388/medium/offset_1017486.jpg?DFghwDcb",
+    desc: "If you’re feeling stuck, unmotivated, or uninspired, travel is a great way to break that cycle. You’ll get lost in finding new things, and you’ll be way too busy exploring to get bored. There’s not just one specific destination meant for each person - but that’s why we love exploring (and why we love this short travel quote).",
+    title: "Wanderlust",
+    date: "10-June-2021",
+    category: "",
+  },
 ];
 
 export const allBlogs = createContext(allCategories);
