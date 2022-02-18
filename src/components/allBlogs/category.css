@@ -76,7 +76,10 @@
 .topPost-title {
   padding-top: 13px;
 }
-
+.topPost-title a {
+  text-decoration: none;
+  color: black;
+}
 .number {
   position: absolute;
   right: 5px;

@@ -8,17 +8,16 @@ function Category(props) {
   const blogs = useContext(allBlogs);
   const { category } = useParams();
   // console.log(props.match.params);
-  
+
   const updateCount = () => {
     setcount((prev) => prev + 2);
   };
-
 
   useEffect(() => {
     setcount(2);
   }, [category]);
   const filteredBlog = blogs.filter((values) => values.category === category);
- 
+
   return (
     <>
       <div className="category-container">
@@ -68,7 +67,12 @@ function Category(props) {
                 </div>
                 <div className="topPost-content-div">
                   <div className="topPost-title">
-                    <b>{values.title}</b>
+                    <b>
+                      <NavLink to={"/article/" + values.id}>
+                        {values.title}
+                      </NavLink>
+                    </b>
+                    {/* <b>{values.title}</b> */}
                   </div>
                   <p>{values.about}</p>
                   <i>{values.category} /</i>
@@ -87,4 +91,3 @@ function Category(props) {
   );
 }
 export default Category;
-
